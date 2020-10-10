@@ -25,7 +25,7 @@ Lingva_Python
 6.  Делаем проверку с помощью ***if***. Число, записанное в счетчике, должно соответстовать длине введенной строки, иначе программа выведет сообщение ***Wrong***. В остальных случаях просто применяем логику и навыки делать простейшие ветвления в **Питоне**  
 
 
-![Код](https://drive.google.com/file/d/1_EgpqlMBIVEmdc3s07dd4WcUO9bmd97T/view?usp=sharing)
+![Ну все](https://mlpforums.com/uploads/post_images/sig-3824781.thank-you-for-your-attention-any-questions-20.png)
 
 
 Вот и программа:sunglasses:  
