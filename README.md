@@ -25,12 +25,15 @@ Lingva_Python
 6.  Делаем проверку с помощью ***if***. Число, записанное в счетчике, должно соответстовать длине введенной строки, иначе программа выведет сообщение ***Wrong***. В остальных случаях просто применяем логику и навыки делать простейшие ветвления в **Питоне**  
 
 
-![Ну все](https://mlpforums.com/uploads/post_images/sig-3824781.thank-you-for-your-attention-any-questions-20.png)
 
 
-Вот и программа:sunglasses:  
+
+Вот и [программа](https://github.com/ArtemSmirnovHSE/Lingva_python/blob/master/%D0%9A%D0%BE%D0%BC%D0%BF%20%D0%BB%D0%B8%D0%BD%D0%B3%D0%B2%D0%B0/EngAndRus.py) :sunglasses:   
+
 Если есть какие-то идеи и предложения, как улучшить код, пожалуйста:pray::pray::pray:, дайте знать  
-До скорого:fire::fire::fire:
+До скорого:fire::fire::fire:  
+
+![Ну все](https://mlpforums.com/uploads/post_images/sig-3824781.thank-you-for-your-attention-any-questions-20.png)
 
 
 
