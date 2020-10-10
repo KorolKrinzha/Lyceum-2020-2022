@@ -27,6 +27,7 @@ Lingva_Python
 
 ![Код](https://drive.google.com/file/d/1_EgpqlMBIVEmdc3s07dd4WcUO9bmd97T/view?usp=sharing)
 
+
 Вот и программа:sunglasses:  
 Если есть какие-то идеи и предложения, как улучшить код, пожалуйста:pray::pray::pray:, дайте знать  
 До скорого:fire::fire::fire:
