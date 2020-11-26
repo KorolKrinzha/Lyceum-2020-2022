@@ -29,9 +29,7 @@ with open('stopit.txt','r') as myself:
 
 
 
-#russian_stopwords = stopwords.words("russian")
-#russian_stopwords.extend(['это', 'нею', 'было', 'на', 'князь', 'он', 'я', 'она', 'и', 'было'])
-#print (russian_stopwords)
+
 
 
 work_file = 'voyna-i-mir-tom-1.txt'
@@ -40,6 +38,8 @@ work_file = 'voyna-i-mir-tom-1.txt'
 new2=[]
 with open(work_file,'r') as myself:
     for word in words (myself):
+        
+        
         p = morph.parse(word)[0]
         if p.normal_form not in rus:
             new2.append (p.normal_form)
@@ -47,15 +47,14 @@ with open(work_file,'r') as myself:
 
 
 
-        
+    
 
     
 
 text = ""
 
 for i in range (len(new2)):
-    if not(len (new2[i])<=2):
-        
+    if len(new2[i])>2:
         text+=new2[i]+" "
     
 
@@ -63,8 +62,7 @@ for i in range (len(new2)):
 
 
 
-text = text.lower()#один регистр
-
+text = text.lower()
 text = text.replace(".", "")
 text = text.replace(",", "")
 text = text.replace("!", "")
@@ -75,9 +73,18 @@ text = text.replace("[", "")
 text = text.replace("]", "")
 text = text.replace("'", "")
 text = text.replace(";", "")
-text = text.replace("''", "")
+text = text.replace("'", "")
 text = text.replace(":", "")
-text = text.replace("``", "")
+text = text.replace("'", "")
+text = text.replace(")", "")
+text = text.replace("(", "")
+text = text.replace("он", "")
+text = text.replace("\bи\b", "")
+text = text.replace("ну", "")
+
+text = text.replace(u"\u2018", "")
+text = text.replace(u"\u2019", "")
+
 
 text_tokens = word_tokenize(text)
 
@@ -85,6 +92,6 @@ text = nltk.Text(text_tokens)
 
 fdist = FreqDist(text)
 
-print (fdist.most_common(10))
+print (fdist.most_common(20))
 
 
