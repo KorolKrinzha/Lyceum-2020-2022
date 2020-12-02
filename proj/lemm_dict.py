@@ -41,7 +41,7 @@ with open(work_file,'r') as myself:
         
         
         p = morph.parse(word)[0]
-        if p.normal_form not in rus:
+        if p.normal_form not in rus and p.tag.POS == 'NOUN':
             new2.append (p.normal_form)
 
 
@@ -82,8 +82,8 @@ text = text.replace("он", "")
 text = text.replace("\bи\b", "")
 text = text.replace("ну", "")
 
-text = text.replace(u"\u2018", "")
-text = text.replace(u"\u2019", "")
+text = text.replace(" "" ", "")
+text = text.replace(" `` ", "")
 
 
 text_tokens = word_tokenize(text)
