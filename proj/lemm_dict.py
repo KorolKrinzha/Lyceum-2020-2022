@@ -34,15 +34,14 @@ with open('stopit.txt','r') as myself:
 
 work_file = 'voyna-i-mir-tom-1.txt'
  
-
-new2=[]
+text = ""
 with open(work_file,'r') as myself:
     for word in words (myself):
         
         
         p = morph.parse(word)[0]
         if p.normal_form not in rus and p.tag.POS == 'NOUN':
-            new2.append (p.normal_form)
+            text+=p.normal_form+" "
 
 
 
@@ -50,14 +49,6 @@ with open(work_file,'r') as myself:
     
 
     
-
-text = ""
-
-for i in range (len(new2)):
-    if len(new2[i])>2:
-        text+=new2[i]+" "
-    
-
 
 
 
@@ -78,12 +69,8 @@ text = text.replace(":", "")
 text = text.replace("'", "")
 text = text.replace(")", "")
 text = text.replace("(", "")
-text = text.replace("он", "")
-text = text.replace("\bи\b", "")
-text = text.replace("ну", "")
 
-text = text.replace(" "" ", "")
-text = text.replace(" `` ", "")
+
 
 
 text_tokens = word_tokenize(text)
