@@ -7,6 +7,9 @@ from nltk.probability import FreqDist
 import nltk
 import pymorphy2
 from nltk.corpus import stopwords
+from wordcloud import WordCloud
+import matplotlib.pyplot as plt
+
 
 
 morph = pymorphy2.MorphAnalyzer()
@@ -80,5 +83,5 @@ text = nltk.Text(text_tokens)
 fdist = FreqDist(text)
 
 print (fdist.most_common(20))
-
+fdist.plot(20,cumulative=False)
 
