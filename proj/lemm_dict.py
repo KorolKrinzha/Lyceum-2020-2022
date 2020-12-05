@@ -1,3 +1,5 @@
+from geotext import GeoText
+import image
 import sys
 import os
 import re
@@ -56,32 +58,14 @@ with open(work_file,'r') as myself:
 
 
 
-text = text.lower()
-text = text.replace(".", "")
-text = text.replace(",", "")
-text = text.replace("!", "")
-text = text.replace("-", "")
-text = text.replace("_", "")
-text = text.replace("?", "")
-text = text.replace("[", "")
-text = text.replace("]", "")
-text = text.replace("'", "")
-text = text.replace(";", "")
-text = text.replace("'", "")
-text = text.replace(":", "")
-text = text.replace("'", "")
-text = text.replace(")", "")
-text = text.replace("(", "")
-
-
-
-
 text_tokens = word_tokenize(text)
 
 text = nltk.Text(text_tokens)
 
 fdist = FreqDist(text)
 
+
 print (fdist.most_common(20))
 fdist.plot(20,cumulative=False)
+
 
