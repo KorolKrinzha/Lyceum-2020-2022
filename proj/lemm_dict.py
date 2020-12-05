@@ -1,5 +1,5 @@
-from geotext import GeoText
-import image
+
+
 import sys
 import os
 import re
@@ -9,7 +9,7 @@ from nltk.probability import FreqDist
 import nltk
 import pymorphy2
 from nltk.corpus import stopwords
-from wordcloud import WordCloud
+
 import matplotlib.pyplot as plt
 
 
