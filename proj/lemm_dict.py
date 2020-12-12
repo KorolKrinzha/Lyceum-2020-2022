@@ -8,7 +8,7 @@ from nltk import word_tokenize
 from nltk.probability import FreqDist
 import nltk
 import pymorphy2
-from nltk.corpus import stopwords
+
 
 import matplotlib.pyplot as plt
 
