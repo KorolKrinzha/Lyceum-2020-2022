@@ -37,17 +37,11 @@ def compute_tf(text):
     
     return tf_text
 
-#Костыль для вывода текст в массив, так как мне было лень писать код самому...
-def words(stringIterable):
-    
-    lineStream = iter(stringIterable)
-    for line in lineStream:
-        for word in line.split():
-            yield word
 
 mylist = []
-with open('text_for_test.txt', 'r') as myself:
-    for word in words (myself):
+with open('text_for_test.txt', 'r', encoding='utf-8' ) as f:
+    words = f.read()
+    for word in words.split():
         mylist.append (word)
    
 
