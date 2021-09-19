@@ -1,6 +1,0 @@
-import re
-string = "31/12/2026"
-pattern  = r'^(0?[1-9]|[12][0-9]|3[01])/(0?[1-9]|1[0-2])/(20[2-3][1-9])$'
-result = re.findall(pattern, string)
-if re.match(pattern, string):
-    print("ok")

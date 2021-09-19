@@ -16,7 +16,7 @@ with open('text_for_test.txt', encoding='utf-8') as f:
   length = text.split(' ')
   countword = text.count('.')
  
-print("Среднее число слов в предложении ", len(length)/countword)
+print("Среднее число слов в предложении ", len(length)/countword, end="\n")
 
 kostil = [(value, key) for key, value in dictimin.items()]
 print ("В предложении ", max(kostil)[1], "больше всего односимвольных слов: ", max(kostil)[0], end = "\n") 

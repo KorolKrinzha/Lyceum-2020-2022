@@ -1,2 +1,0 @@
-from secret import message as ok
-print(ok)
